@@ -1,0 +1,12 @@
+SELECT AVG(energy), AVG(valence), AVG(danceability)
+FROM songs;
+
+This returns an average:
+    Energy: 0.66
+    Valence: 0.48
+    Danceability: 0.72
+
+First, the statistical measure used may not be particularly helpful, and others, even median, should be considered.
+Second, due to the abstract nature of these descriptors, they are likely more suitably compared against the statistical norms of other users, rather than taking them at face value.
+Third, the abstract nature of "audio aura" itself makes it challenging to determine a better calculation. It would be beneficial to explore how the current descriptors for each song are calculated and determine if the process could be improved/more insightful, or use different descriptors altogether to reach the intended goal.
+
