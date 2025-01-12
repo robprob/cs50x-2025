@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Purchase Stocks
+{% endblock %}
+
+{% block main %}
+    <h1>Purchase Stocks</h1>
+    <form action="/buy" method="post">
+        <div class="mb-3">
+            <input list="symbols" autocomplete="off" autofocus class="form-control mx-auto w-auto" name="symbol" placeholder="Symbol" type="text">
+            <datalist id="symbols">
+                {% for stock in stocks %}
+                    <option value="{{ stock.symbol }}">{{ stock.name }}</option>
+                {% endfor %}
+            </datalist>
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="shares" placeholder="Quantity" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Purchase</button>
+    </form>
+{% endblock %}

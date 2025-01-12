@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Transaction History
+{% endblock %}
+
+{% block main %}
+    <h1>Transaction History</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Timestamp</th>
+                <th>Symbol</th>
+                <th>Buy/Sell Price</th>
+                <th>Quantity Change</th>
+                <th>Cash Balance Change</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for entry in user_history %}
+            <tr>
+                <td>{{ entry.timestamp }}</td>
+                <td>{{ entry.symbol }}</td>
+                <td>{{ entry.price }}</td>
+                <td>{{ entry.quantity }}</td>
+                <td>{{ entry.balance_change }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+{% endblock %}

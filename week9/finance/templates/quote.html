@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quote
+{% endblock %}
+
+{% block main %}
+    <h1>Lookup Current Price</h1>
+    <form action="/quote" method="post">
+        <div class="mb-3">
+            <input list="symbols" autocomplete="off" autofocus class="form-control mx-auto w-auto" name="symbol" placeholder="Symbol" type="text">
+            <datalist id="symbols">
+                {% for stock in stocks %}
+                    <option value="{{ stock.symbol }}">{{ stock.name }}</option>
+                {% endfor %}
+            </datalist>
+        </div>
+        <button class="btn btn-primary" type="submit">Lookup</button>
+    </form>
+{% endblock %}
