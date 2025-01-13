@@ -58,9 +58,11 @@ Program performance was measured in seconds using the CPU time implementation pr
 
 ## Examples (Left: My Program, Right: Harvard Staff Program)
 Shortest Text: cat.txt (1 line, 1 page)
+
 ![cat_results](https://github.com/user-attachments/assets/f38d834d-3535-4ae5-9132-891ca311963c)
 
 Longest Text: shakespeare.txt (124,453 lines, 4,979 pages)
+
 ![shakespeare_results](https://github.com/user-attachments/assets/8763aa7d-73f0-49dc-84a2-8b8d9cb25056)
 
 
