@@ -21,7 +21,7 @@ A significant portion of the efficiency gains with smaller texts comes from my i
 
 ## Performance Results Table
 
-Program performance was measured in seconds using the CPU time implementation provided by the Harvard staff. When run time was inconsistent, median time was taken from ~10 tests. Efficiency calculated as: **(Harvard Program Time) / (This Program Time)**.
+Program performance was measured in seconds using the CPU time implementation provided by the Harvard staff. When time was inconsistent, median time was taken from ~10 tests. Efficiency calculated as: **(Harvard Program Time) / (This Program Time)**.
 
 
 | Test Case | Length (lines) | Pages (estimate) | This Program Time | Harvard Staff Solution Time | Efficiency Difference |
